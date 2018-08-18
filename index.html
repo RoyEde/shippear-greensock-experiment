@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Awesome</title>
+	<style>
+		body {
+			margin: 0;
+			background-color: #000097;
+			flex: 1;
+		}
+		.container {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		iframe {
+			border: none;
+			flex: 1;
+		}
+		.overlay {
+			color: #fff;
+			display: flex;
+			height: 100vh;
+			position: fixed;
+			width: 100vw;
+			z-index: 2;
+		}
+		button {
+			background-color: #00000066;
+			border: none;
+			color: #fff;
+			font-size: 12rem;
+			flex: 1;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="overlay" class="overlay"><button id='playButton'>Start!</button></div>
+		<iframe style="opacity: 0" src="escena-optimizada.svg" id="scene"></iframe>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	<script src="animacion.js"></script>
+</body>
+</html>
